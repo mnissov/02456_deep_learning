@@ -1,0 +1,23 @@
+
+
+Predict: 
+	- Drop off location for every pick up at any moment in time.
+
+How:
+	- Kalman filter
+		- States: number of bikes in each hub as a time series
+		- Events: pick up and drop off.
+
+ANN:
+	- predict number of bikes in each hub:
+	inputs: vector of pick ups discrete in time. drop offs?
+	output: difference in hub number of bikes 
+
+	Discretize by seassons, dismiss special events
+
+
+Output number of bikes or additional bikes
+
+
+
+	
